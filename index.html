@@ -20,15 +20,18 @@
   <template data-provider-template id="">
     <div class="card provider">
         <div class="img">
-          <img src="assets\therapist.jpg" alt="" id="provider-image">
+          <img src="assets\therapist.jpg" alt="" id="provider-image" class="framed flex-grow: 1">
         </div>
-        <div class="provider-details">
+        <div class="provider-details flex-grow: 3">
           <div class="header" data-header></div>
           <div class="title" data-title></div>
+          <hr>
+          <div class="business" data-business></div>
+          <div class="address"><span data-city></span><span data-state> </span><span data-zip> </span></div>
           <div class="body">
-            <div data-email></div>
+
             <div data-phone></div>
-            <div><span data-city></span><span data-state> </span><span data-zip> </span></div>
+            <div data-email></div>
           </div>
         </div>
       </div>
