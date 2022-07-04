@@ -5,6 +5,7 @@
     first: "Shameka",
     last: "Argo",
     title: "Licensed Professional Counselor, MA, LPC",
+    business: "Points of Origin, LLC",
     phone: "864-633-2842",
     email: "",
     city: "Greenville",
@@ -16,6 +17,7 @@
     first: "Julian",
     last: "Green",
     title: "Clinical Social Work/Therapist, MSW, LCSW, LISW-CP, CCTP",
+    business: "Hope + Healing + Happiness Life Solutions w/Jules",
     phone: "803-200-5639",
     email: "jules_green@email.com",
     city: "Columbia",
@@ -27,11 +29,36 @@
   first: "Royce",
   last: "Miller",
   title: "Licensed Professional Counselor, MA, LPC",
+  business: "There Is Hope Counseling, LLC",
   phone: "864-881-2797",
   email: "endiajones@tihcounseling.com",
   city: "Clemson",
   state: "South Carolina",
   zip: "29631"
+},
+{
+  id: 4,
+  first: "Sabrina",
+  last: "Richardson",
+  title: "LMFT",
+  business: "Intrinsic Therapy, LLC",
+  phone: "864-464-9029",
+  email: "",
+  city: "Spartanburg",
+  state: "South Carolina",
+  zip: "29302"
+},
+{
+  id: 5,
+  first: "Valeria",
+  last: "Smith-Byrd",
+  title: "Licensed Professional Counselor",
+  business: "LiveWell Consulting & Counseling",
+  phone: "864-719-7594",
+  email: "",
+  city: "Piedmont",
+  state: "South Carolina",
+  zip: "29673"
 }
 ]
 
@@ -92,6 +119,7 @@ const header = card.querySelector('[data-header]');
  const title = card.querySelector('[data-title]');
  const email = card.querySelector('[data-email]');
   const phone = card.querySelector('[data-phone]');
+  const business = card.querySelector('[data-business]')
   const city = card.querySelector('[data-city]');
   const state = card.querySelector('[data-state]');
   const zip= card.querySelector('[data-zip]');
@@ -99,6 +127,7 @@ const header = card.querySelector('[data-header]');
 // console.log(header);
   header.textContent = provider.first + " " + provider.last;
   title.textContent = provider.title;
+  business.textContent = provider.business;
   email.textContent= provider.email;
   phone.textContent = provider.phone;
   city.textContent = provider.city + ", ";
