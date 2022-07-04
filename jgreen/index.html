@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css\styles.css">
+    <script type="text/javascript" src ="js\script.js" defer></script>
+
+  </head>
+  <body>
+<div class="search-wrapper">
+  <label for="search">Search Providers</label>
+  <input type="search" id="search" data-search onkeyup="search_providers()">
+
+</div>
+<div class="provider-cards">
+
+
+  <div  data-provider-cards-container class="flex-container" ></div>
+  <template data-provider-template id="">
+    <div class="card provider">
+        <div class="img">
+          <img src="assets\therapist.jpg" alt="" id="provider-image">
+        </div>
+        <div class="provider-details">
+          <div class="header" data-header></div>
+          <div class="title" data-title></div>
+          <div class="body">
+            <div data-email></div>
+            <div data-phone></div>
+            <div><span data-city></span><span data-state> </span><span data-zip> </span></div>
+          </div>
+        </div>
+      </div>
+  </template>
+</div>
+
+  </body>
+</html>
